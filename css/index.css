@@ -32,7 +32,12 @@ footer {
     background-size: 100% 100%;
 }
 
-
+.stamp {
+    width: 18vh;
+    height: 3vh;
+    top: -1%;
+    right: 21%;
+}
 
 .btn_signUp {
     background: #951205;
@@ -48,8 +53,6 @@ footer {
 
 .background {
     background-image: url(../imgs/bg.png);
-    width: 100%;
-    height: 100vh;
     background-size: cover;
 }
 
@@ -64,16 +67,88 @@ footer {
     font-size: 28px;
 }
 
+.text_color {
+    color: #38241B;
+}
+
 .title {
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 80px;
-    font-weight: 5;
-    line-height: 90px;
     margin-bottom: 20px;
+    font-family: 'AR JULIAN';
+    font-style: normal;
+    font-weight: 5;
+    font-size: 80px;
+    line-height: 90px;
+    color: #38241B;
+}
+
+.title_line {
+    height: 0.5vh;
+    background-color: #38241B;
+    margin: 0 10vh;
+    margin-bottom: 0.5rem;
+}
+
+.introduce_content {
+    font-family: 'Noto Sans TC';
+    font-size: 43px;
+    font-weight: 500;
+    text-align: center;
 
 }
 
 
+
+.card {
+    background-image: url(../imgs/card.png);
+    width: 90vw;
+    height: 550px;
+    background-size: contain;
+
+}
+
+.card_title {
+    font-family: 'Noto Sans TC';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 44px;
+    line-height: 64px;
+    color: white;
+}
+
+.card_content {
+    font-family: 'Noto Serif TC';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 44px;
+
+    color: #38241B;
+
+}
+
+.btn_level {
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    height: 64px;
+    width: 180px;
+    border-radius: 40px;
+    color: #38241B;
+    font-weight: bold;
+    border: #38241B 1.5px solid;
+    margin: 0 10px;
+    font-size: 28px;
+}
+
+.btn_contribute {
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    background: #951205;
+    height: 64px;
+    width: 180px;
+    border-radius: 40px;
+    color: white;
+    font-weight: bold;
+    border: #951205 1.5px solid;
+    margin: 0 10px;
+    font-size: 28px;
+}
 
 @media (min-width: 992px) {
     .navbar-ul {

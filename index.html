@@ -10,6 +10,7 @@
     />
 
     <!-- Bootstrap CSS v5.2.1 -->
+    <link rel="icon" href="imgs/favicon.png" type="image/x-icon" />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -21,7 +22,6 @@
 
   <body>
     <header>
-      <!-- place navbar here -->
       <nav
         class="navbar navbar-expand-lg navbar-bg navbar-dark bg-dark position-relative"
       >
@@ -62,12 +62,12 @@
       </nav>
     </header>
     <main>
-      <div class="background">
+      <div class="background w-100 h-100">
         <div class="homepage_bg position-relative">
           <div
             class="homepage_content position-absolute top-50 start-50 translate-middle"
           >
-            <div class="d-flex justify-content-between m-4 p-4 h-100">
+            <div class="d-flex justify-content-between m-5 px-2 h-100">
               <div class="">
                 <div class="d-flex justify-content-center align-items-center">
                   <div class="title">The F2E</div>
@@ -78,10 +78,10 @@
                   </div>
                 </div>
 
-                <h1 class="my-8">
+                <h1 class="my-8 text_color">
                   前端工程師和介面設計師<br />，攜手合作拿獎金
                 </h1>
-                <h3 class="my-4">
+                <h3 class="my-4 text_color">
                   羨慕別人的酷酷網頁動畫？<br />
                   滿足不了同事的許願？<br />
                   動畫技能樹太雜無從下手？
@@ -90,32 +90,78 @@
               <div
                 class="d-flex justify-content-center align-items-center h-100"
               >
-                <div class=" ">
-                  <div class="text-center d-flex align-items-baseline m-8">
+                <div>
+                  <div
+                    class="text-center d-flex align-items-baseline m-8 text_color"
+                  >
                     <h3>報名總人數</h3>
-                    <h1>1158</h1>
+                    <h1 class="text_color">1158</h1>
                     <h3>人</h3>
                   </div>
 
                   <div class="text-center d-flex align-items-baseline m-8">
                     <h3>報名總人數</h3>
-                    <h1>1158</h1>
+                    <h1 class="text_color">1158</h1>
 
                     <h3>人</h3>
                   </div>
-                  <div class="text-center d-flex align-items-baseline m-8">
+                  <div
+                    class="text-center d-flex align-items-baseline m-8 text_color"
+                  >
                     <h3>報名總人數</h3>
-                    <h1>1158</h1>
+                    <h1 class="text_color">1158</h1>
                     <h3>人</h3>
                   </div>
                 </div>
               </div>
             </div>
           </div>
+          <div class="stamp position-absolute">
+            <img src="imgs/stamp.png" alt="stamp.png" />
+          </div>
           <div
             class="people position-absolute bottom-0 start-50 translate-middle-x"
           >
-            <img class="img_people" src="imgs/people.png" />
+            <img class="img_people" src="imgs/people.png" alt="people.png" />
+          </div>
+        </div>
+        <div class="introduce">
+          <div class="d-flex justify-content-center">
+            <div>
+              <img src="imgs/hexschool.png" alt="title" class="w-30 h-30 m-4" />
+              <div class="introduce_content">年度最強合作，三大關卡來襲</div>
+            </div>
+          </div>
+          <div class="title_line"></div>
+          <div class="title_line"></div>
+          <div class="m-2 d-flex justify-content-center h-100">
+            <div>
+              <div class="card">
+                <div class="card_title mx-4">視差滾動 Parallax Scrolling</div>
+                <div class="d-flex justify-content-around mt-5">
+                  <div class="card_content">12345646484848<img /></div>
+                  <div>
+                    <div class="card_content">The F2E 活動網站設計</div>
+                    <h3 class="text_color">
+                      請參考本屆官網的首頁視差滾動技巧，<br />並請您重新
+                      redesign 本頁面來設計。
+                    </h3>
+                    <div class="d-flex justify-content-start">
+                      <button
+                        class="btn btn_level d-flex align-items-center justify-content-center"
+                      >
+                        關卡攻略
+                      </button>
+                      <button
+                        class="btn btn_contribute d-flex align-items-center justify-content-center"
+                      >
+                        投稿
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
