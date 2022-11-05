@@ -1,5 +1,10 @@
 .navbar-bg {
     background: #38241B !important;
+    z-index: 15;
+}
+
+.newspaper_1 {
+    z-index: 10;
 }
 
 footer {
@@ -15,6 +20,7 @@ footer {
 
 .img_people {
     width: 40vw;
+    display: block;
     padding-bottom: 12px;
     z-index: 1;
 }
@@ -26,7 +32,7 @@ footer {
 }
 
 .homepage_content {
-    background-image: url(../imgs/Rectangle.png);
+    background-image: url(../imgs/bg_content.png);
     width: 96%;
     height: 96%;
     background-size: 100% 100%;
@@ -37,6 +43,27 @@ footer {
     height: 3vh;
     top: -1%;
     right: 21%;
+}
+
+.mouse_1 {
+    margin-right: 6.75rem;
+    margin-bottom: 4rem;
+}
+
+.mouse_2 {
+    margin-right: 7.5rem;
+    margin-bottom: 7rem;
+}
+
+.mouse_down {
+    width: 100px;
+    margin-right: 3.5rem;
+    margin-bottom: 2rem;
+    font-family: 'Noto Sans TC';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    color: #000000;
 }
 
 .btn_signUp {
@@ -53,7 +80,6 @@ footer {
 
 .background {
     background-image: url(../imgs/bg.png);
-    background-size: cover;
 }
 
 .four_th {
@@ -69,6 +95,7 @@ footer {
 
 .text_color {
     color: #38241B;
+    font-family: 'Noto Sans TC';
 }
 
 .title {
@@ -93,16 +120,18 @@ footer {
     font-size: 43px;
     font-weight: 500;
     text-align: center;
+    height: 20vh;
 
 }
 
-
-
 .card {
-    background-image: url(../imgs/card.png);
-    width: 90vw;
-    height: 550px;
-    background-size: contain;
+    background-image: url(../imgs/card_box.png);
+    background-size: cover;
+}
+
+.cardContent_bg {
+    background-image: url(../imgs/card_content.png);
+    background-size: cover;
 
 }
 
@@ -120,8 +149,31 @@ footer {
     font-style: normal;
     font-weight: 900;
     font-size: 44px;
-
     color: #38241B;
+
+}
+
+.cardContent_img {
+    padding: 1rem;
+}
+
+.card_introduce {
+    font-family: 'Noto Sans TC';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 35px;
+    color: #38241B;
+}
+
+.scrolling_text {
+    font-family: 'Noto Sans TC';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    color: #FFFFFF;
+    top: 58%;
+    left: 42%;
 
 }
 
@@ -139,15 +191,193 @@ footer {
 
 .btn_contribute {
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    background: #951205;
+    background: #38241B;
     height: 64px;
     width: 180px;
     border-radius: 40px;
     color: white;
     font-weight: bold;
-    border: #951205 1.5px solid;
+    border: #38241B 1.5px solid;
     margin: 0 10px;
     font-size: 28px;
+}
+
+.schedule_title {
+    background-color: #38241B;
+    color: white;
+    font-family: 'Noto Serif TC';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 60px;
+    line-height: 86px;
+    text-align: center;
+}
+
+.schedule_illustrate {
+    font-family: 'Noto Sans TC';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 28px;
+    color: #38241B;
+}
+
+#progress {
+    position: relative;
+}
+
+/* 進度條 */
+.progressBar {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 90px 20px 90px;
+}
+
+.progressBar2 {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 90px 20px 90px;
+}
+
+.progressBar2::after {
+    content: "";
+    position: absolute;
+    top: 21px;
+    background: #38241B;
+    height: 0.5vh;
+    width: 100%;
+}
+
+.progressBar::after {
+    content: "";
+    position: absolute;
+    top: 21px;
+    background: #38241B;
+    height: 0.5vh;
+    width: 100%;
+}
+
+.progressGo {
+    position: absolute;
+    height: 0.5vh;
+    background: #951205;
+    width: 100%;
+    top: 21px;
+    z-index: 2;
+}
+
+.progressBar li {
+    background: #951205;
+    width: 48px;
+    height: 48px;
+    z-index: 1;
+    position: relative;
+    transform: rotate(45deg);
+
+}
+
+.progressBar2 li {
+    background: #38241B;
+    width: 48px;
+    height: 48px;
+    z-index: 1;
+    position: relative;
+    transform: rotate(45deg);
+
+}
+
+.progressBar li.stop~li {
+    background: #38241B;
+}
+
+.progressBar li.stop~li::after {
+    height: 0;
+}
+
+.progressBar li::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 5px;
+    background: #951205;
+    width: 5px;
+}
+
+
+.progressTitle {
+    font-family: 'Noto Sans TC';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    width: 120px;
+    text-align: center;
+    color: #38241B;
+}
+
+.progressAllTitle {
+    list-style: none;
+    padding: 0;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    margin: 30px 70px 0px 70px;
+}
+
+
+.progressItem {
+    margin-top: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    font-family: 'Noto Sans TC';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    color: #38241B;
+}
+
+.progressBarItem {
+    list-style: none;
+    padding: 0;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 30px 0 30px;
+}
+
+.awards {
+    top: 65%;
+}
+
+.award {
+    padding: 10px;
+    gap: 10px;
+    background: #951205;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 9px;
+    color: #FFFFFF;
+    font-family: 'Noto Sans TC';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    padding: 16px;
+}
+
+.awards_content {
+    font-family: 'Noto Sans TC';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 26px;
+    text-align: center;
+    color: #38241B;
 }
 
 @media (min-width: 992px) {

@@ -10,6 +10,6 @@ The F2E 活動網站
 
 ## 使用技術
 
-Html、bootstrap、css
+Html、bootstrap、css、GSAP、jquery
 
 ## 第三方服務

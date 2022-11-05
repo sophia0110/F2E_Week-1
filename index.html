@@ -20,7 +20,7 @@
     <link rel="stylesheet" href="./css/index.css" media="screen" />
   </head>
 
-  <body>
+  <body class="background w-100">
     <header>
       <nav
         class="navbar navbar-expand-lg navbar-bg navbar-dark bg-dark position-relative"
@@ -62,115 +62,353 @@
       </nav>
     </header>
     <main>
-      <div class="background w-100 h-100">
-        <div class="homepage_bg position-relative">
-          <div
-            class="homepage_content position-absolute top-50 start-50 translate-middle"
-          >
-            <div class="d-flex justify-content-between m-5 px-2 h-100">
-              <div class="">
-                <div class="d-flex justify-content-center align-items-center">
-                  <div class="title">The F2E</div>
-                  <div
-                    class="four_th d-flex align-items-center justify-content-center"
-                  >
-                    4th
-                  </div>
+      <div class="homepage_bg position-relative">
+        <img
+          src="./imgs/newspaper/newspaper_1.png"
+          class="w-100 position-absolute newspaper_1"
+        />
+        <div
+          class="homepage_content position-absolute top-50 start-50 translate-middle"
+        >
+          <div class="d-flex justify-content-between m-5 px-2 h-100">
+            <div class="">
+              <div class="d-flex justify-content-center align-items-center">
+                <div class="title">The F2E</div>
+                <div
+                  class="four_th d-flex align-items-center justify-content-center"
+                >
+                  4th
                 </div>
-
-                <h1 class="my-8 text_color">
-                  前端工程師和介面設計師<br />，攜手合作拿獎金
-                </h1>
-                <h3 class="my-4 text_color">
-                  羨慕別人的酷酷網頁動畫？<br />
-                  滿足不了同事的許願？<br />
-                  動畫技能樹太雜無從下手？
-                </h3>
               </div>
-              <div
-                class="d-flex justify-content-center align-items-center h-100"
-              >
-                <div>
-                  <div
-                    class="text-center d-flex align-items-baseline m-8 text_color"
-                  >
-                    <h3>報名總人數</h3>
-                    <h1 class="text_color">1158</h1>
-                    <h3>人</h3>
-                  </div>
-
-                  <div class="text-center d-flex align-items-baseline m-8">
-                    <h3>報名總人數</h3>
-                    <h1 class="text_color">1158</h1>
-
-                    <h3>人</h3>
-                  </div>
-                  <div
-                    class="text-center d-flex align-items-baseline m-8 text_color"
-                  >
-                    <h3>報名總人數</h3>
-                    <h1 class="text_color">1158</h1>
-                    <h3>人</h3>
-                  </div>
+              <h1 class="my-8 text_color">
+                前端工程師和介面設計師<br />，攜手合作拿獎金
+              </h1>
+              <h3 class="my-4 text_color">
+                羨慕別人的酷酷網頁動畫？<br />
+                滿足不了同事的許願？<br />
+                動畫技能樹太雜無從下手？
+              </h3>
+            </div>
+            <div class="d-flex justify-content-center align-items-center h-100">
+              <div>
+                <div
+                  class="text-center d-flex align-items-baseline m-8 text_color"
+                >
+                  <h3>報名總人數</h3>
+                  <h1 class="text_color">1158</h1>
+                  <h3>人</h3>
+                </div>
+                <div class="text-center d-flex align-items-baseline m-8">
+                  <h3>報名總人數</h3>
+                  <h1 class="text_color">1158</h1>
+                  <h3>人</h3>
+                </div>
+                <div
+                  class="text-center d-flex align-items-baseline m-8 text_color"
+                >
+                  <h3>報名總人數</h3>
+                  <h1 class="text_color">1158</h1>
+                  <h3>人</h3>
                 </div>
               </div>
             </div>
-          </div>
-          <div class="stamp position-absolute">
-            <img src="imgs/stamp.png" alt="stamp.png" />
-          </div>
-          <div
-            class="people position-absolute bottom-0 start-50 translate-middle-x"
-          >
-            <img class="img_people" src="imgs/people.png" alt="people.png" />
+            <div class="position-absolute bottom-0 end-0">
+              <img
+                src="imgs/mouse/mouse_1.png"
+                alt="mouse_1.png"
+                class="position-absolute bottom-0 end-0 mouse_1"
+              />
+              <img
+                src="imgs/mouse/mouse_2.png"
+                alt="mouse_2.png"
+                class="position-absolute bottom-0 end-0 mouse_2"
+              />
+              <div class="mouse_down position-absolute bottom-0 end-0">
+                向下滾動
+              </div>
+            </div>
           </div>
         </div>
-        <div class="introduce">
-          <div class="d-flex justify-content-center">
-            <div>
-              <img src="imgs/hexschool.png" alt="title" class="w-30 h-30 m-4" />
-              <div class="introduce_content">年度最強合作，三大關卡來襲</div>
+        <div class="stamp position-absolute">
+          <img src="imgs/stamp.png" alt="stamp.png" />
+        </div>
+
+        <div
+          class="people position-absolute bottom-0 start-50 translate-middle-x"
+        ></div>
+      </div>
+      <div class="d-flex justify-content-center">
+        <img
+          class="img_people position-absolute"
+          src="imgs/people.png"
+          alt="people.png"
+        />
+      </div>
+      <!-- <img
+        src="./imgs/newspaper/newspaper_2.png"
+        class="w-50 position-absolute bottom-0 start-0"
+      />
+      <img
+        src="./imgs/newspaper/newspaper_3.png"
+        class="w-50 position-absolute bottom-0 end-0"
+      /> -->
+      <div id="introduce">
+        <div class="d-flex justify-content-center">
+          <div>
+            <img src="imgs/hexschool.png" alt="title" class="w-30 h-30 m-4" />
+            <div class="introduce_content">年度最強合作，三大關卡來襲</div>
+          </div>
+        </div>
+        <div class="title_line"></div>
+        <div class="title_line"></div>
+        <div class="card h-100 m-5">
+          <div class="d-flex justify-content-between align-items-center m-2">
+            <div class="card_title mx-4 mt-1">視差滾動 Parallax Scrolling</div>
+            <div class="mx-5"><img src="imgs/logo/block_studio.png" /></div>
+          </div>
+          <div
+            class="d-flex justify-content-around align-items-center m-4 cardContent_bg"
+          >
+            <div class="card_content position-relative">
+              <div class="cardContent_img mx-2 my-4">
+                <img
+                  src="imgs/card/parallax_scrolling.png"
+                  class="w-100 h-100"
+                  alt="parallax_scrolling"
+                />
+                <img
+                  src="imgs/card/scrolling_1.png"
+                  class="position-absolute top-50 start-50 translate-middle"
+                />
+                <img
+                  src="imgs/card/scrolling_2.png"
+                  class="position-absolute top-50 start-50 translate-middle"
+                />
+                <p class="position-absolute scrolling_text">向下移動</p>
+              </div>
+            </div>
+            <div class="">
+              <div class="card_content">The F2E 活動網站設計</div>
+              <h3 class="text_color card_introduce">
+                請參考本屆官網的首頁視差滾動技巧，並請您重新 redesign<br />
+                本頁面來設計。
+              </h3>
+              <div class="d-flex justify-content-start">
+                <button
+                  class="btn btn-outline-light btn_level d-flex align-items-center justify-content-center"
+                >
+                  關卡攻略
+                </button>
+                <button
+                  class="btn btn-light btn_contribute d-flex align-items-center justify-content-center"
+                >
+                  投稿
+                </button>
+              </div>
             </div>
           </div>
-          <div class="title_line"></div>
-          <div class="title_line"></div>
-          <div class="m-2 d-flex justify-content-center h-100">
-            <div>
-              <div class="card">
-                <div class="card_title mx-4">視差滾動 Parallax Scrolling</div>
-                <div class="d-flex justify-content-around mt-5">
-                  <div class="card_content">12345646484848<img /></div>
-                  <div>
-                    <div class="card_content">The F2E 活動網站設計</div>
-                    <h3 class="text_color">
-                      請參考本屆官網的首頁視差滾動技巧，<br />並請您重新
-                      redesign 本頁面來設計。
-                    </h3>
-                    <div class="d-flex justify-content-start">
-                      <button
-                        class="btn btn_level d-flex align-items-center justify-content-center"
-                      >
-                        關卡攻略
-                      </button>
-                      <button
-                        class="btn btn_contribute d-flex align-items-center justify-content-center"
-                      >
-                        投稿
-                      </button>
-                    </div>
-                  </div>
-                </div>
+        </div>
+        <div class="card h-100 m-5">
+          <div class="d-flex justify-content-between align-items-center m-2">
+            <div class="card_title mx-4 mt-1">線上簽署 Canvas</div>
+            <div class="mx-5"><img src="imgs/logo/kdan.png" /></div>
+          </div>
+          <div
+            class="d-flex justify-content-around align-items-center m-4 cardContent_bg"
+          >
+            <div class="card_content position-relative">
+              <div class="cardContent_img mx-2 my-4">
+                <img src="imgs/card/pdf.png" class="w-100 h-100" alt="pdf" />
+              </div>
+            </div>
+            <div class="">
+              <div class="card_content">今晚，我想來點點簽</div>
+              <h3 class="text_color card_introduce">
+                每次要 PDF 簽名都要列印出來再掃描好麻煩，自幹一個 Web<br />
+                版本的簽名服務吧！
+              </h3>
+              <div class="d-flex justify-content-start">
+                <button
+                  class="btn btn-outline-light btn_level d-flex align-items-center justify-content-center"
+                >
+                  關卡攻略
+                </button>
+                <button
+                  class="btn btn-light btn_contribute d-flex align-items-center justify-content-center"
+                >
+                  投稿
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card h-100 m-5">
+          <div class="d-flex justify-content-between align-items-center m-2">
+            <div class="card_title mx-4 mt-1">Scrum JS draggable</div>
+            <div class="mx-5"><img src="imgs/logo/titansoft.png" /></div>
+          </div>
+          <div
+            class="d-flex justify-content-around align-items-center m-4 cardContent_bg"
+          >
+            <div class="card_content position-relative">
+              <div class="cardContent_img mx-2 my-4">
+                <img
+                  src="imgs/card/scrum.png"
+                  class="w-100 h-100"
+                  alt="scrum"
+                />
+              </div>
+            </div>
+            <div class="">
+              <div class="card_content">Scrum 新手村</div>
+              <h3 class="text_color card_introduce">
+                設計關卡內容與網頁互動效果，透過頁面關卡來呈現知識點，<br />讓挑戰者藉由你設計的內容更了解
+                Scrum。
+              </h3>
+              <div class="d-flex justify-content-start">
+                <button
+                  class="btn btn-outline-light btn_level d-flex align-items-center justify-content-center"
+                >
+                  關卡攻略
+                </button>
+                <button
+                  class="btn btn-light btn_contribute d-flex align-items-center justify-content-center"
+                >
+                  投稿
+                </button>
               </div>
             </div>
           </div>
         </div>
       </div>
+      <div id="schedule">
+        <div class="schedule_title py-4">賽程時間</div>
+        <div class="schedule_content">
+          <div id="progress mx-5">
+            <ul class="progressAllTitle" id="progress_1">
+              <li>
+                <div class="progressTitle">開始報名</div>
+              </li>
+              <li>
+                <div class="progressTitle">開賽</div>
+              </li>
+              <li>
+                <div class="progressTitle">登入作品</div>
+              </li>
+              <li>
+                <div class="progressTitle">線上直播</div>
+              </li>
+            </ul>
+            <ul class="progressBar">
+              <div class="progressGo"></div>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+            </ul>
+            <ul class="progressBarItem">
+              <li>
+                <div class="progressItem">10/13(四) 早上 11:00</div>
+                <div class="progressItem">至 11/6(日) 晚上 23:59</div>
+              </li>
+              <li>
+                <div class="progressItem">UI組、團體組開賽 10/31</div>
+                <div class="progressItem">前端組開賽 11 /7</div>
+              </li>
+              <li>
+                <div class="progressItem">10/31(一) 中午 12:00</div>
+                <div class="progressItem">至11/28(一) 中午 12:00</div>
+              </li>
+              <li>
+                <div class="progressItem">11/3 至 11/24(每週四)</div>
+              </li>
+            </ul>
+            <div class="d-flex justify-content-center">
+              <div class="w-50">
+                <ul class="progressAllTitle">
+                  <li>
+                    <div class="progressTitle">初選</div>
+                  </li>
+                  <li>
+                    <div class="progressTitle">決選</div>
+                  </li>
+                </ul>
+                <ul class="progressBar2">
+                  <div class="progressGo"></div>
+                  <li></li>
+                  <li></li>
+                </ul>
+                <ul class="progressBarItem">
+                  <li>
+                    <div class="progressItem">12/05(五)</div>
+                  </li>
+                  <li>
+                    <div class="progressItem">12/05(五)</div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="schedule_illustrate d-flex justify-content-center m-2">
+              初選：將由六角學院前端、UI 評審進行第一波篩選，並於
+              12/5（五）公布初選佳作名單<br />
+              決選：由三大企業針對該企業主題進行入圍獎最後篩選，並於
+              12/23（五）公布企業得獎名單
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="award" class="position-relative">
+        <div class="schedule_title py-4 my-4">獎項</div>
+
+        <div class="d-flex justify-content-around">
+          <div>
+            <img src="imgs/awards_1.png" class="w-100 h-100" alt="團體獎" />
+          </div>
+          <div>
+            <img src="imgs/awards_2.png" class="w-100 h-100" alt="個人獎" />
+          </div>
+          <div>
+            <img src="imgs/awards_3.png" class="w-100 h-100" alt="入圍獎" />
+          </div>
+        </div>
+        <div
+          class="awards d-flex justify-content-around w-100 position-absolute"
+        >
+          <div class="award">$10,000 (3名)</div>
+          <div class="award">$3000 (6名)</div>
+          <div class="award">數位獎狀(60名)</div>
+        </div>
+        <div class="d-flex justify-content-around w-100 my-5">
+          <div class="awards_content">每個關卡各 1 組</div>
+          <div class="awards_content">
+            每個關卡各 2 名，<br />
+            設計 1 名、前端 1 名
+          </div>
+          <div class="awards_content">
+            每個關卡個人組十位<br />
+            、團體組十組
+          </div>
+        </div>
+        <h2 class="d-flex justify-content-center text_color m-4">
+          以上皆提供完賽數位獎狀
+        </h2>
+      </div>
+      <div class="my-4">
+        <div class="schedule_title py-4 mt-4">
+          贊助單位
+          <div class="d-flex justify-content-around my-4">
+            <img src="imgs/logo/block_studio.png" alt="版塊設計" />
+            <img src="imgs/logo/kdan.png" alt="凱鈿行動科技" />
+            <img src="imgs/logo/titansoft.png" alt="新加坡商鈦坦科技" />
+          </div>
+        </div>
+      </div>
     </main>
     <footer>
-      <p class="d-flex justify-content-center footer_content">
+      <p class="d-flex justify-content-center footer_content p-0 m-4">
         六角日報 © Code: Sophia Su / Design: KT
       </p>
-      <!-- place footer here -->
     </footer>
     <!-- Bootstrap JavaScript Libraries -->
     <script
@@ -184,5 +422,15 @@
       integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz"
       crossorigin="anonymous"
     ></script>
+    <script
+      src="https://code.jquery.com/jquery-3.6.1.min.js"
+      integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ="
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/TextPlugin.min.js"></script>
+    <script src="js/index.js"></script>
+    <script src="js/progress.js"></script>
   </body>
 </html>
