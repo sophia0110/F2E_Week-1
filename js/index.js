@@ -10,13 +10,11 @@ const img_people = gsap.timeline({
   },
 });
 
-img_people
-  .to(".img_people", {
-    top: "100%",
-    yPercent: "-100",
-    opacity: 1,
-
-  })
+img_people.to(".img_people", {
+  top: "100%",
+  yPercent: "-100",
+  opacity: 1,
+});
 
 const newspaper_1 = gsap.timeline({
   scrollTrigger: {
@@ -80,55 +78,76 @@ newspaper_3
     opacity: 0,
   });
 
+const mouse = gsap.timeline({
+  scrollTrigger: {
+    trigger: ".mouse",
+    start: "top 20%",
+    end: "top 1%",
+    scrub: true,
+  },
+});
 
-  const card_1 = gsap.timeline({
-    scrollTrigger: {
-      trigger: "#card_1",
-      start: 'top 100%',
-      end: 'top 1%',
-      scrub: true,
-    },
-  })
+mouse.to(".mouse", {
+  top: 0,
+  yPercent: "0.05",
+  opacity: 0,
+  duration: 1,
+  repeat: -1,
+});
 
-  card_1.to('#card_1', {
+const card_1 = gsap.timeline({
+  scrollTrigger: {
+    trigger: "#card_1",
+    start: "top 120%",
+    end: "top 1%",
+    scrub: true,
+  },
+});
+
+card_1
+  .to("#card_1", {
     top: 0,
-    xPercent: '-200',
-  }).to('#card_1', {
-    top: 0,
-    xPercent: '0',
+    xPercent: "-200",
   })
-
-
-  const card_3 = gsap.timeline({
-    scrollTrigger: {
-      trigger: "#card_3",
-      start: 'top 100%',
-      end: 'top 1%',
-      scrub: true,
-    },
-  })
-
-  card_3.to('#card_3', {
+  .to("#card_1", {
     top: 0,
-    xPercent: '-200',
-  }).to('#card_3', {
-    top: 0,
-    xPercent: '0',
-  })
+    xPercent: "0",
+  });
 
-  const card_2 = gsap.timeline({
-    scrollTrigger: {
-      trigger: "#card_2",
-      start: 'top 100%',
-      end: 'top 1%',
-      scrub: true,
-    },
-  })
+const card_3 = gsap.timeline({
+  scrollTrigger: {
+    trigger: "#card_3",
+    start: "top 120%",
+    end: "top 1%",
+    scrub: true,
+  },
+});
 
-  card_2.to('#card_2', {
+card_3
+  .to("#card_3", {
     top: 0,
-    xPercent: '200',
-  }).to('#card_2', {
-    top: 0,
-    xPercent: '0',
+    xPercent: "-200",
   })
+  .to("#card_3", {
+    top: 0,
+    xPercent: "0",
+  });
+
+const card_2 = gsap.timeline({
+  scrollTrigger: {
+    trigger: "#card_2",
+    start: "top 120%",
+    end: "top 1%",
+    scrub: true,
+  },
+});
+
+card_2
+  .to("#card_2", {
+    top: 0,
+    xPercent: "200",
+  })
+  .to("#card_2", {
+    top: 0,
+    xPercent: "0",
+  });
