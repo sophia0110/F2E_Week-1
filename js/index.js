@@ -3,23 +3,26 @@ gsap.registerPlugin(ScrollTrigger, TextPlugin);
 const img_people = gsap.timeline({
   scrollTrigger: {
     trigger: ".img_people ",
-    start: "top 75%",
+    start: "top 25%",
     end: "top 1%",
-    endTrigger: "#introduce",
     scrub: true,
   },
 });
 
 img_people.to(".img_people", {
-  top: "100%",
-  yPercent: "-100",
-  opacity: 1,
+  bottom: "70%",
+  yPercent: "-48",
+}).to(".img_people", {
+  bottom: "50%",
+  yPercent: "-68",
 });
 
 const newspaper_1 = gsap.timeline({
   scrollTrigger: {
     trigger: ".newspaper_1 ",
-    start: "top 45%",
+    // markers: true,
+    start: "top 7%",
+    endTrigger: "#introduce",
     scrub: true,
   },
 });
@@ -27,12 +30,16 @@ const newspaper_1 = gsap.timeline({
 newspaper_1
   .to(".newspaper_1", {
     top: "100%",
-    yPercent: "0",
+    yPercent: "-80",
+    opacity: 1,
+  }) .to(".newspaper_1", {
+    top: "30%",
+    yPercent: "-300",
     opacity: 1,
   })
   .to(".newspaper_1", {
     top: "0",
-    yPercent: "-300",
+    yPercent: "-320",
     opacity: 0,
   });
 
@@ -98,56 +105,41 @@ mouse.to(".mouse", {
 const card_1 = gsap.timeline({
   scrollTrigger: {
     trigger: "#card_1",
-    start: "top 120%",
+    start: "top 100%",
     end: "top 1%",
     scrub: true,
   },
 });
 
-card_1
-  .to("#card_1", {
-    top: 0,
-    xPercent: "-200",
-  })
-  .to("#card_1", {
-    top: 0,
-    xPercent: "0",
-  });
+card_1.to("#card_1", {
+  top: 0,
+  left: 0,
+});
 
 const card_3 = gsap.timeline({
   scrollTrigger: {
     trigger: "#card_3",
-    start: "top 120%",
+    start: "top 100%",
     end: "top 1%",
     scrub: true,
   },
 });
 
-card_3
-  .to("#card_3", {
-    top: 0,
-    xPercent: "-200",
-  })
-  .to("#card_3", {
-    top: 0,
-    xPercent: "0",
-  });
+card_3.to("#card_3", {
+  top: 0,
+  left: 0,
+});
 
 const card_2 = gsap.timeline({
   scrollTrigger: {
     trigger: "#card_2",
-    start: "top 120%",
+    start: "top 100%",
     end: "top 1%",
     scrub: true,
   },
 });
 
-card_2
-  .to("#card_2", {
-    top: 0,
-    xPercent: "200",
-  })
-  .to("#card_2", {
-    top: 0,
-    xPercent: "0",
-  });
+card_2.to("#card_2", {
+  top: 0,
+  left: 0,
+});

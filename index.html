@@ -70,8 +70,10 @@
         <div
           class="homepage_content position-absolute top-50 start-50 translate-middle"
         >
-          <div class="d-flex justify-content-between m-5 px-2 h-100">
-            <div class="">
+          <div
+            class="d-flex justify-content-between m-5 px-2 h-100 homepageContent_size"
+          >
+            <div>
               <div class="d-flex justify-content-center align-items-center">
                 <div class="title">The F2E</div>
                 <div
@@ -98,7 +100,9 @@
                   <h1 class="text_color">1158</h1>
                   <h3>人</h3>
                 </div>
-                <div class="text-center d-flex align-items-baseline m-8">
+                <div
+                  class="text-center d-flex align-items-baseline m-8 text_color"
+                >
                   <h3>報名總人數</h3>
                   <h1 class="text_color">1158</h1>
                   <h3>人</h3>
@@ -133,18 +137,12 @@
           <img src="imgs/stamp.png" alt="stamp.png" />
         </div>
 
-        <div
-          class="people position-absolute bottom-0 start-50 translate-middle-x"
-        ></div>
+        <div class="people position-absolute start-50 translate-middle-x">
+          <img class="img_people" src="imgs/people.png" alt="people.png" />
+        </div>
       </div>
-      <div class="d-flex justify-content-center">
-        <img
-          class="img_people position-absolute"
-          src="imgs/people.png"
-          alt="people.png"
-        />
-      </div>
-      <div>
+
+      <div class="bottom_newspaper">
         <img
           src="./imgs/newspaper/newspaper_2.png"
           class="w-50 position-absolute top-50 start-0 newspaper_2"
@@ -156,7 +154,7 @@
       </div>
       <div id="introduce">
         <div class="d-flex justify-content-center">
-          <div>
+          <div class="introduce_Allcontent">
             <img src="imgs/hexschool.png" alt="title" class="w-30 h-30 m-4" />
             <div class="introduce_content">年度最強合作，三大關卡來襲</div>
           </div>
@@ -166,7 +164,9 @@
         <div class="card h-100 m-5" id="card_1">
           <div class="d-flex justify-content-between align-items-center m-2">
             <div class="card_title mx-4 mt-1">視差滾動 Parallax Scrolling</div>
-            <div class="mx-5"><img src="imgs/logo/block_studio.png" /></div>
+            <div class="mx-5 logo">
+              <img src="imgs/logo/block_studio.png" />
+            </div>
           </div>
           <div
             class="d-flex justify-content-around align-items-center m-4 cardContent_bg"
@@ -213,7 +213,7 @@
         <div class="card h-100 m-5" id="card_2">
           <div class="d-flex justify-content-between align-items-center m-2">
             <div class="card_title mx-4 mt-1">線上簽署 Canvas</div>
-            <div class="mx-5"><img src="imgs/logo/kdan.png" /></div>
+            <div class="mx-5 logo"><img src="imgs/logo/kdan.png" /></div>
           </div>
           <div
             class="d-flex justify-content-around align-items-center m-4 cardContent_bg"
@@ -247,7 +247,7 @@
         <div class="card h-100 m-5" id="card_3">
           <div class="d-flex justify-content-between align-items-center m-2">
             <div class="card_title mx-4 mt-1">Scrum JS draggable</div>
-            <div class="mx-5"><img src="imgs/logo/titansoft.png" /></div>
+            <div class="mx-5 logo"><img src="imgs/logo/titansoft.png" /></div>
           </div>
           <div
             class="d-flex justify-content-around align-items-center m-4 cardContent_bg"
@@ -350,7 +350,9 @@
                 </ul>
               </div>
             </div>
-            <div class="schedule_illustrate d-flex justify-content-center m-2">
+            <div
+              class="schedule_illustrate d-flex justify-content-center my-2 mx-4"
+            >
               初選：將由六角學院前端、UI 評審進行第一波篩選，並於
               12/5（五）公布初選佳作名單<br />
               決選：由三大企業針對該企業主題進行入圍獎最後篩選，並於
@@ -399,7 +401,7 @@
       <div class="my-4">
         <div class="schedule_title py-4 mt-4">
           贊助單位
-          <div class="d-flex justify-content-around my-4">
+          <div class="d-flex justify-content-around my-4 align-items-center">
             <img src="imgs/logo/block_studio.png" alt="版塊設計" />
             <img src="imgs/logo/kdan.png" alt="凱鈿行動科技" />
             <img src="imgs/logo/titansoft.png" alt="新加坡商鈦坦科技" />
