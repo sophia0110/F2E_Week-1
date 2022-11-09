@@ -3,18 +3,26 @@
     z-index: 15;
 }
 
+
+
 .newspaper_1 {
-    z-index: 10;
+    z-index: 5;
 
 }
 
 .newspaper_2 {
-    z-index: 10;
+    z-index: 7;
 }
 
 .newspaper_3 {
+    z-index: 6;
+}
+
+.sroll_down,
+.mouse {
     z-index: 10;
 }
+
 
 footer {
     background-image: url(../imgs/bg.png);
@@ -29,7 +37,9 @@ footer {
 
 .people {
     bottom: -55%;
+    z-index: 5;
 }
+
 
 .img_people {
     width: 40vw;
@@ -49,13 +59,17 @@ footer {
     width: 96%;
     height: 96%;
     background-size: 100% 100%;
+    z-index: 3;
 }
+
+
 
 .stamp {
     width: 18vh;
     height: 3vh;
     top: -1%;
     right: 21%;
+    z-index: 4;
 }
 
 .mouse_1 {
@@ -104,6 +118,20 @@ footer {
     padding: 10px;
     margin: 10px;
     font-size: 28px;
+}
+
+.loading_box {
+    height: 40%;
+    width: 40%;
+}
+
+.bonus {
+    font-family: 'Noto Serif TC';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 72px;
+
+    color: #951205;
 }
 
 .text_color {
@@ -517,6 +545,10 @@ footer {
 
     .card_introduce {
         display: none;
+    }
+
+    #loading {
+        z-index: 1;
     }
 
     .progressTitle {
