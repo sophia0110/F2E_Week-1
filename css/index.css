@@ -611,4 +611,8 @@ footer {
     #number_of_people {
         display: none;
     }
+
+    .bonus {
+        font-size: 48px;
+    }
 }
