@@ -66,6 +66,7 @@
         class="position-absolute top-50 start-50 translate-middle sroll_down"
       >
         <div id="mouse" class="mouse"></div>
+        <div id="up"></div>
       </div>
       <div class="homepage_bg position-relative">
         <img
@@ -97,7 +98,7 @@
               </h3>
             </div>
             <div class="d-flex justify-content-center align-items-center h-100">
-              <div>
+              <div id="number_of_people">
                 <div
                   class="text-center d-flex align-items-baseline m-8 text_color"
                 >
@@ -121,21 +122,6 @@
                 </div>
               </div>
             </div>
-            <!-- <div class="position-absolute bottom-0 end-0">
-              <img
-                src="imgs/mouse/mouse_1.png"
-                alt="mouse_1.png"
-                class="position-absolute bottom-0 end-0 mouse_1"
-              />
-              <img
-                src="imgs/mouse/mouse_2.png"
-                alt="mouse_2.png"
-                class="position-absolute bottom-0 end-0 mouse_2 mouse"
-              />
-              <div class="mouse_down position-absolute bottom-0 end-0 mouse">
-                向下滾動
-              </div>
-            </div> -->
           </div>
         </div>
         <div class="stamp position-absolute">
@@ -405,17 +391,96 @@
         </h2>
       </div>
       <div class="d-flex my-5 justify-content-center">
-        <div class="justify-content-center">
-          <div class="title">意想不到得好康</div>
+        <div class="justify-content-center bonus_content">
+          <div class="title bonus_content">意想不到得好康</div>
           <div class="d-flex justify-content-center">
-            <div class="bonus"><a>請點擊</a></div>
+            <div class="bonus">請點擊</div>
             <div class="loading_box">
               <div id="loading"></div>
             </div>
           </div>
         </div>
       </div>
-
+      <div class="class">
+        <div class="schedule_title py-4 my-4">各界大神直播分享</div>
+        <div class="all_Class d-flex justify-content-around flex-wrap">
+          <div class="class_box m-4 position-relative">
+            <div
+              class="position-absolute class_card d-flex justify-content-center align-items-center w-100 mt-4 flex-wrap text-center"
+            >
+              網站的動態趨勢
+            </div>
+            <div
+              class="class_sub position-absolute start-50 translate-middle-x d-flex justify-content-center align-items-center"
+            >
+              李明 <br />版塊設計創辦人兼總監
+            </div>
+            <div
+              class="card_introduce position-absolute bottom-0 d-flex justify-content-center align-items-center w-100 mb-4"
+            >
+              11/03(四)20:00 ~ 21:30
+            </div>
+            <img src="imgs/animation/李明.gif" class="w-100" />
+          </div>
+          <div class="class_box m-4 position-relative">
+            <div
+              class="position-absolute class_card d-flex justify-content-center align-items-center w-100 mt-4 flex-wrap text-center"
+            >
+              jQuery 也可以做到<br />的互動效果
+            </div>
+            <div
+              class="class_sub position-absolute start-50 translate-middle-x d-flex justify-content-center align-items-center"
+            >
+              Leo<br />
+              Angular Taiwan 傳教士
+            </div>
+            <div
+              class="card_introduce position-absolute bottom-0 d-flex justify-content-center align-items-center w-100 mb-4"
+            >
+              11/10(四)20:00 ~ 21:30
+            </div>
+            <img src="imgs/animation/leo.gif" class="w-100" />
+          </div>
+          <div class="class_box m-4 position-relative">
+            <div
+              class="position-absolute class_card d-flex justify-content-center align-items-center w-100 mt-4 flex-wrap text-center"
+            >
+              網頁可以拖拖拉拉<br />draggable.js 介紹
+            </div>
+            <div
+              class="class_sub position-absolute start-50 translate-middle-x d-flex justify-content-center align-items-center"
+            >
+              邱繼緯<br />
+              前端工程師
+            </div>
+            <div
+              class="card_introduce position-absolute bottom-0 d-flex justify-content-center align-items-center w-100 mb-4"
+            >
+              11/17(四)20:00 ~ 21:30
+            </div>
+            <img src="imgs/animation/邱繼緯.gif" class="w-100" />
+          </div>
+          <div class="class_box m-4 position-relative">
+            <div
+              class="position-absolute class_card d-flex justify-content-center align-items-center w-100 mt-4 flex-wrap text-center"
+            >
+              互動式網頁設計<br />工程師該具備哪些技能？
+            </div>
+            <div
+              class="class_sub position-absolute start-50 translate-middle-x d-flex justify-content-center align-items-center"
+            >
+              吳哲宇<br />
+              墨雨互動設計創辦人
+            </div>
+            <div
+              class="card_introduce position-absolute bottom-0 d-flex justify-content-center align-items-center w-100 mb-4"
+            >
+              11/24(四)20:00 ~ 21:30
+            </div>
+            <img src="imgs/animation/吳哲宇.gif" class="w-100" />
+          </div>
+        </div>
+      </div>
       <div class="my-4">
         <div class="schedule_title py-4 mt-4">
           贊助單位
@@ -458,8 +523,6 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/ScrollTrigger.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/TextPlugin.min.js"></script>
-    <script type="text/javascript" src="js/loading.json"></script>
-
     <script src="js/index.js"></script>
     <script src="js/progress.js"></script>
   </body>

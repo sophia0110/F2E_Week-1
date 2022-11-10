@@ -3,8 +3,6 @@
     z-index: 15;
 }
 
-
-
 .newspaper_1 {
     z-index: 5;
 
@@ -23,6 +21,9 @@
     z-index: 10;
 }
 
+#up {
+    display: none;
+}
 
 footer {
     background-image: url(../imgs/bg.png);
@@ -37,7 +38,7 @@ footer {
 
 .people {
     bottom: -55%;
-    z-index: 5;
+    z-index: 3;
 }
 
 
@@ -62,35 +63,12 @@ footer {
     z-index: 3;
 }
 
-
-
 .stamp {
     width: 18vh;
     height: 3vh;
     top: -1%;
     right: 21%;
     z-index: 4;
-}
-
-.mouse_1 {
-    margin-right: 6.75rem;
-    margin-bottom: 5rem;
-}
-
-.mouse_2 {
-    margin-right: 7.5rem;
-    margin-bottom: 8rem;
-}
-
-.mouse_down {
-    width: 100px;
-    margin-right: 3.5rem;
-    margin-bottom: 2rem;
-    font-family: 'Noto Sans TC';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    color: #000000;
 }
 
 .btn_signUp {
@@ -130,7 +108,7 @@ footer {
     font-style: normal;
     font-weight: 900;
     font-size: 72px;
-
+    cursor: pointer;
     color: #951205;
 }
 
@@ -430,12 +408,37 @@ footer {
     color: #38241B;
 }
 
+.class {
+    display: none;
+}
+
+.class_sub {
+    background-image: url(../imgs/class_sub.png);
+    color: #FFFFFF;
+    width: 30vw;
+    height: 10vh;
+    bottom: 15%;
+    font-family: 'Noto Sans TC';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    text-align: center;
+}
+
+.class_card {
+    font-family: 'Noto Serif TC';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 36px;
+}
+
 @media (min-width: 992px) {
     .navbar-ul {
         position: absolute;
         top: 25%;
         right: 0%;
     }
+
 }
 
 
@@ -470,6 +473,18 @@ footer {
 
     .introduce_content {
         height: 10vh;
+    }
+
+    #mouse {
+        display: none;
+    }
+
+    #up {
+        display: block;
+    }
+
+    #number_of_people {
+        display: none;
     }
 
 }
@@ -585,5 +600,15 @@ footer {
 
     }
 
+    #mouse {
+        display: none;
+    }
 
+    #up {
+        display: block;
+    }
+
+    #number_of_people {
+        display: none;
+    }
 }

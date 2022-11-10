@@ -6,7 +6,7 @@ The F2E 活動網站
 
 ## 系統說明
 
-下載檔案資料夾，直接開啟 index.js
+下載檔案資料夾，直接開啟 index.html
 
 ## 資料夾說明
 
@@ -16,7 +16,7 @@ imgs:圖片
 
 ## 使用技術
 
-Html、bootstrap、css、GSAP、jquery
+Html、bootstrap、css、GSAP、jquery、lottie
 
 ## 第三方服務
 

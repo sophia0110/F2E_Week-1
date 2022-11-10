@@ -29,13 +29,12 @@ img_people
   })
   .to(".img_people", {
     bottom: "0%",
-    yPercent: "-68",
+    yPercent: "-60",
   });
 
 const newspaper_1 = gsap.timeline({
   scrollTrigger: {
     trigger: ".newspaper_1 ",
-    // markers: true,
     start: "top 7%",
     endTrigger: "#introduce",
     scrub: true,
@@ -90,22 +89,6 @@ newspaper_2
     opacity: 0,
   });
 
-// const mouse2 = gsap.timeline({
-//   scrollTrigger: {
-//     trigger: ".mouse",
-//     start: "top 20%",
-//     end: "top 1%",
-//     scrub: true,
-//   },
-// });
-
-// mouse2.to(".mouse", {
-//   top: 0,
-//   yPercent: "0.05",
-//   opacity: 0,
-//   duration: 1,
-//   repeat: -1,
-// });
 
 const card_1 = gsap.timeline({
   scrollTrigger: {
@@ -149,6 +132,11 @@ card_2.to("#card_2", {
   left: 0,
 });
 
+$(".bonus").on("click", function () {
+  $(".bonus_content").hide();
+  $(".class").show();
+});
+
 const animation = lottie.loadAnimation({
   container: document.getElementById("loading"), // the dom element that will contain the animation
   renderer: "svg",
@@ -163,4 +151,14 @@ const scrollDown = lottie.loadAnimation({
   loop: true,
   autoplay: true,
   path: "./js/scroll_down.json", // the path to the animation json
+});
+
+up
+
+const swipeUp = lottie.loadAnimation({
+  container: document.getElementById("up"), // the dom element that will contain the animation
+  renderer: "svg",
+  loop: true,
+  autoplay: true,
+  path: "./js/swipe_up.json", // the path to the animation json
 });
